@@ -1,0 +1,20 @@
+{
+
+  "manifest_version": 2,
+  "name": "Awfulizer",
+  "version": "1.0",
+
+  "description": "Changes all of your CSS 6 times a second.",
+
+  "icons": {
+    "48": "icons/awfulizer.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["css_random.js"]
+    }
+  ]
+
+}
