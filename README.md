@@ -5,4 +5,4 @@ I wanted to see what I could do with Firefox extensions and some basic Javascrip
 
 ## Notes:
 
-* Implement button. Use 'background' in manifest and figure out how to inject the script into the current tab and remove it when you click the button again.
+* This extension can only turn the effect _on_ at the moment. Refresh your tab to reset.
