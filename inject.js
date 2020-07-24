@@ -37,4 +37,6 @@ function changeAllColors() {
 	setTimeout(changeAllColors, 150)
 }
 
-setTimeout(changeAllColors, 150)
+(function() {
+	setTimeout(changeAllColors, 150)
+})();

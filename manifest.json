@@ -10,11 +10,18 @@
     "48": "icons/awfulizer.png"
   },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*/*"],
-      "js": ["css_random.js"]
-    }
-  ]
+  "background": {
+    "scripts": [
+      "background.js"
+    ],
+    "persistent": true
+  },
 
+  "browser_action": {
+    "default_title": "Awfulizer"
+  },
+
+  "permissions": [
+    "activeTab"
+  ]
 }
