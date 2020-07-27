@@ -26,6 +26,12 @@ function getRandomHex(max) {
 	return '#' + intNumber.toString(16);
 }
 
+function changeAllColorsCycle() {
+	changeAllColors()
+	
+	setTimeout(changeAllColorsCycle, 150)
+}
+
 function changeAllColors() {
 
 	var tags = document.getElementsByTagName("*");
@@ -34,9 +40,8 @@ function changeAllColors() {
 		tags[i].style.backgroundColor = getRandomHex(4096);
 		tags[i].style.color = getRandomHex(4096);
 	}
-	setTimeout(changeAllColors, 150)
 }
 
 (function() {
-	setTimeout(changeAllColors, 150)
+	changeAllColorsCycle()
 })();
