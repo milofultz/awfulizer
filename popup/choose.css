@@ -1,0 +1,28 @@
+html, body {
+  width: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+.button {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: red;
+  margin: 3% auto;
+  padding: 4px;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  background-color: green;
+}
+
+.cycle {
+  font-family: "Papyrus", cursive, sans-serif;
+  color: blue;
+  background-color: red;
+}
+
+.button:hover {
+  background-color: black;
+}
